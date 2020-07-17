@@ -116,6 +116,15 @@ class _CadastroPageState extends State<CadastroPage> {
               ],
             ),
           ),
+          ListView.builder(
+          itemBuilder: (BuildContext context, int index) {
+            return ListTile(
+              leading: CircleAvatar(
+                backgroundImage: NetworkImage(
+                    'https://www.gravatar.com/avatar/$index?d=robohash'),
+              ),
+            );
+          },
         ),
       ),
     );
